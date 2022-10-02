@@ -1,0 +1,161 @@
+/* CSS for the login page */
+
+body{
+    background-color: #1A1B1C;
+    margin: 0;
+}
+
+html{
+    font-family: 'Mulish';
+}
+
+/* position form wrapper */
+.form-wrapper{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ /* position container for form */
+.form-container{
+    height: 42vh;
+    width: 23vw;
+    background-color: #52057B;
+    border-radius: 10px;
+}
+
+/* set grid for login form */
+.login-form{
+    display: grid;
+    grid-template-columns: repeat(1,fr);
+}
+
+/* specify grid */
+.grid-item{
+    width: 100%;
+    text-align: center;
+}
+
+/* set grid item input width except last child */
+.grid-item>input:not(:last-child){
+    width: 90%;
+}
+
+/* set logo name */
+.logo-name{
+    color: #fff;
+    font-size: 24px;
+}
+
+.logo-name>p{
+    margin: 2vh 0 1vh 0;
+}
+
+/* set text */
+.text_1{
+    color: #9FA2B4;
+    font: 12px;
+}
+
+/* configure entrybox for email */
+.entrybox_email{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.entrybox_email>label{
+    color: #9FA2B4;
+    margin-left: 15%;
+}
+
+#uname{
+    width: 70%;
+    align-self: center;
+    border-radius: 5px;
+}
+
+/* configure entrybox for pwd */
+.entrybox_pwd{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+/* configure entrybox for pwd */
+.entrybox_pwd>label{
+    color: #9FA2B4;
+    margin-left: 15%;
+}
+
+#pwd{
+    width: 70%;
+    align-self: center;
+    border-radius: 5px;
+}
+
+.pwd-input>i{
+    position: absolute;
+}
+
+.pwd-input{
+    width: 100%;
+}
+
+.icon{
+    cursor: pointer;
+    text-align: center;
+    color: #9FA2B4;
+    margin-left: -20px;
+}
+
+/* configure fgt ps */
+.fgt-ps{
+    width: 79%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+#fgt-ps{
+    align-self: flex-end;
+    text-decoration: none;
+    color: #9FA2B4;
+    font-size: 11px;
+}
+
+#fgt-ps:hover{
+    color: #8c8e9a;
+}
+
+/* configure for login button */
+#login{
+    width: 70%;
+    border-radius: 5px;
+    background-color: #BC6FF1;
+    color: #fff;
+    border: none;
+    margin-bottom: 15px;
+}
+
+#login:hover{
+    background-color: #ac51e9;
+}
+
+/* configure sign up text */
+#sign-up-text{
+    color: #8c8e9a;
+}
+
+#sign-up-link{
+    text-decoration: none;
+    color: #BC6FF1;
+}
+
+#sign-up-link:hover{
+    color: #ac51e9;
+}
